@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "missionVision": "Mission & Vision",
+    "services": "Services",
+    "projects": "Projects",
+    "process": "Process",
+    "whySteel": "Why Steel",
+    "quality": "Quality & Certifications",
+    "insights": "Insights",
+    "careers": "Careers",
+    "contact": "Contact",
+    "quote": "Get a Quote",
+    "menu": "Menu",
+    "close": "Close",
+    "skip": "Skip to content"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "viewProject": "View project",
+    "readArticle": "Read article",
+    "back": "Back",
+    "all": "All",
+    "minRead": "min read",
+    "location": "Location",
+    "year": "Year",
+    "area": "Area",
+    "steel": "Steel",
+    "tons": "tons",
+    "scope": "Scope",
+    "status": "Status",
+    "completed": "Completed",
+    "ongoing": "In progress",
+    "placeholderImage": "Image coming soon",
+    "relatedProjects": "Related projects",
+    "otherServices": "Other services",
+    "whatWeDeliver": "What we deliver",
+    "whyZka": "Why ZKA",
+    "skipIntro": "Click to skip",
+    "language": "Language"
+  },
+  "cta": {
+    "title": "Let's build your project together.",
+    "text": "From your plot to your keys: tell us your idea and we'll prepare a roadmap tailored to you.",
+    "primary": "Book a free consultation",
+    "secondary": "Message us on WhatsApp"
+  },
+  "footer": {
+    "tagline": "Your end-to-end partner in design, engineering and steel construction.",
+    "company": "Company",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy",
+    "rights": "All rights reserved."
+  },
+  "cookie": {
+    "text": "We use essential cookies and, with your permission, analytics cookies to improve your experience.",
+    "accept": "Accept",
+    "decline": "Essential only",
+    "more": "Details"
+  },
+  "form": {
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "service": "Service of interest",
+    "selectService": "Select",
+    "other": "Other",
+    "message": "Your message",
+    "consent": "I agree to my personal data being processed so you can contact me.",
+    "submit": "Send",
+    "sending": "Sending…",
+    "success": "Thank you! Your message has reached us and we'll get back to you shortly.",
+    "error": "Your message could not be sent. Please try again or email us directly.",
+    "position": "Position",
+    "general": "General application",
+    "cvLink": "CV / LinkedIn link"
+  },
+  "notFound": {
+    "title": "This beam is missing.",
+    "text": "The page you're looking for may have moved, or was never built.",
+    "home": "Back to home"
+  }
+}

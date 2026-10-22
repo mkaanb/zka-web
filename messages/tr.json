@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "missionVision": "Misyon & Vizyon",
+    "services": "Hizmetler",
+    "projects": "Projeler",
+    "process": "Süreç",
+    "whySteel": "Neden Çelik",
+    "quality": "Kalite & Belgeler",
+    "insights": "Blog",
+    "careers": "Kariyer",
+    "contact": "İletişim",
+    "quote": "Teklif Alın",
+    "menu": "Menü",
+    "close": "Kapat",
+    "skip": "İçeriğe geç"
+  },
+  "common": {
+    "learnMore": "Detaylı bilgi",
+    "viewAll": "Tümünü gör",
+    "viewProject": "Projeyi incele",
+    "readArticle": "Yazıyı oku",
+    "back": "Geri",
+    "all": "Tümü",
+    "minRead": "dk okuma",
+    "location": "Konum",
+    "year": "Yıl",
+    "area": "Alan",
+    "steel": "Çelik",
+    "tons": "ton",
+    "scope": "Kapsam",
+    "status": "Durum",
+    "completed": "Tamamlandı",
+    "ongoing": "Devam ediyor",
+    "placeholderImage": "Görsel yakında",
+    "relatedProjects": "İlgili projeler",
+    "otherServices": "Diğer hizmetler",
+    "whatWeDeliver": "Neler sunuyoruz",
+    "whyZka": "Neden ZKA",
+    "skipIntro": "Geçmek için tıklayın",
+    "language": "Dil"
+  },
+  "cta": {
+    "title": "Projenizi birlikte inşa edelim.",
+    "text": "Arsanızdan anahtarınıza kadar; fikrinizi dinleyelim, size özel bir yol haritası hazırlayalım.",
+    "primary": "Ücretsiz görüşme planlayın",
+    "secondary": "WhatsApp ile yazın"
+  },
+  "footer": {
+    "tagline": "Tasarım, mühendislik ve çelik yapıda uçtan uca çözüm ortağınız.",
+    "company": "Kurumsal",
+    "servicesTitle": "Hizmetler",
+    "contactTitle": "İletişim",
+    "privacy": "Gizlilik Politikası (KVKK)",
+    "cookies": "Çerez Politikası",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "cookie": {
+    "text": "Deneyiminizi iyileştirmek için zorunlu çerezler ve izninizle analiz çerezleri kullanıyoruz.",
+    "accept": "Kabul et",
+    "decline": "Yalnızca zorunlu",
+    "more": "Detaylar"
+  },
+  "form": {
+    "name": "Ad Soyad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "service": "İlgilendiğiniz hizmet",
+    "selectService": "Seçiniz",
+    "other": "Diğer",
+    "message": "Mesajınız",
+    "consent": "Kişisel verilerimin iletişim amacıyla işlenmesini kabul ediyorum.",
+    "submit": "Gönder",
+    "sending": "Gönderiliyor…",
+    "success": "Teşekkürler! Mesajınız bize ulaştı, en kısa sürede dönüş yapacağız.",
+    "error": "Mesaj gönderilemedi. Lütfen tekrar deneyin veya bize doğrudan e-posta gönderin.",
+    "position": "Başvurulan pozisyon",
+    "general": "Genel başvuru",
+    "cvLink": "CV / LinkedIn bağlantısı"
+  },
+  "notFound": {
+    "title": "Bu kiriş yerinde yok.",
+    "text": "Aradığınız sayfa taşınmış veya hiç inşa edilmemiş olabilir.",
+    "home": "Ana sayfaya dön"
+  }
+}

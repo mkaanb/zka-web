@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --color-graphite: #141717;
+  --color-graphite-2: #1d2121;
+  --color-graphite-3: #2a3030;
+  --color-paper: #f5f3ef;
+  --color-paper-2: #ebe7e0;
+  --color-teal: #1ea896;
+  --color-teal-dark: #158474;
+  --color-teal-light: #5fd0c0;
+  --color-steel: #4c5454;
+  --color-steel-light: #8a9696;
+  --color-earth: #523e37;
+  --color-earth-light: #b9a79d;
+
+  --font-display: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-paper text-graphite font-sans;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+  ::selection {
+    @apply bg-teal text-white;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-teal;
+  }
+}
+
+@utility container-x {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+}
+@utility eyebrow {
+  @apply inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.25em] text-teal;
+  &::before {
+    content: "";
+    @apply h-px w-8 bg-current;
+  }
+}
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300;
+}
+@utility btn-primary {
+  @apply btn bg-teal text-white hover:bg-teal-dark hover:shadow-lg hover:shadow-teal/20;
+}
+@utility btn-ghost {
+  @apply btn border border-current/25 hover:border-teal hover:text-teal;
+}
+@utility blueprint {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, currentColor 8%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, currentColor 8%, transparent) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@layer components {
+  .prose-zka p {
+    @apply mb-5 leading-relaxed text-graphite/80;
+  }
+  .prose-zka h2 {
+    @apply mt-10 mb-4 text-2xl font-bold text-graphite;
+  }
+  .prose-zka ul {
+    @apply mb-6 space-y-2 pl-0;
+  }
+  .prose-zka li {
+    @apply relative pl-6 text-graphite/80;
+  }
+  .prose-zka li::before {
+    content: "";
+    @apply absolute left-0 top-2.5 h-px w-3 bg-teal;
+  }
+}
+
+/* Intro loader: hidden when already seen this session, or for reduced motion. */
+html[data-intro-seen] .zka-loader {
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .zka-loader {
+    display: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
