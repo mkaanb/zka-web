@@ -83,5 +83,13 @@
     "title": "Bu kiriş yerinde yok.",
     "text": "Aradığınız sayfa taşınmış veya hiç inşa edilmemiş olabilir.",
     "home": "Ana sayfaya dön"
+  },
+  "construction": {
+    "eyebrow": "Çok yakında",
+    "title": "Sitemiz de özenle inşa ediliyor.",
+    "text": "Tasarım, mühendislik ve çelik yapıda uçtan uca çözümlerimizi anlatan yeni web sitemiz çok yakında yayında. Bu sürede projeleriniz için bize her zaman ulaşabilirsiniz.",
+    "whatsapp": "WhatsApp ile yazın",
+    "call": "Bizi arayın",
+    "services": "Mimari Tasarım · Statik Proje · Çelik Yapı · Anahtar Teslim"
   }
 }

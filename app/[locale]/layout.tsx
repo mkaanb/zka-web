@@ -8,10 +8,12 @@ import { Loader } from "@/components/brand/Loader";
 import { CookieBanner } from "@/components/layout/CookieBanner";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { UnderConstruction } from "@/components/layout/UnderConstruction";
 import { WhatsAppFab } from "@/components/layout/WhatsAppFab";
 import { routing, type Locale } from "@/i18n/routing";
 import { inter, manrope } from "@/lib/fonts";
 import { JsonLd, organizationLd } from "@/lib/jsonld";
+import { UNDER_CONSTRUCTION } from "@/lib/launch";
 import { SITE } from "@/lib/site";
 import "../globals.css";
 
@@ -36,6 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       ? "ZKA Investment Ltd.: KKTC'de mimari tasarım, statik proje, çelik yapı ve anahtar teslim inşaat çözümleri."
       : "ZKA Investment Ltd.: architectural design, structural engineering, steel construction and turnkey projects in North Cyprus (TRNC).",
     icons: { icon: "/logo.svg" },
+    ...(UNDER_CONSTRUCTION && { robots: { index: false, follow: false } }),
   };
 }
 
@@ -66,12 +69,18 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider>
-          <Loader skipLabel={t("skipIntro")} />
-          <Header />
-          <main id="main">{children}</main>
-          <Footer />
-          <WhatsAppFab label={cta("secondary")} />
-          <CookieBanner />
+          {UNDER_CONSTRUCTION ? (
+            <UnderConstruction locale={locale as Locale} />
+          ) : (
+            <>
+              <Loader skipLabel={t("skipIntro")} />
+              <Header />
+              <main id="main">{children}</main>
+              <Footer />
+              <WhatsAppFab label={cta("secondary")} />
+              <CookieBanner />
+            </>
+          )}
         </NextIntlClientProvider>
       </body>
     </html>

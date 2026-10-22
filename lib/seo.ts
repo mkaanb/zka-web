@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { routing, type Locale } from "@/i18n/routing";
+import { UNDER_CONSTRUCTION } from "./launch";
 import { SITE } from "./site";
 
 /** Absolute URL for a locale + path (path starts with "/" or is ""). Matches `trailingSlash: true`. */
@@ -22,6 +23,8 @@ export function buildMetadata({
   keywords?: string[];
   type?: "website" | "article";
 }): Metadata {
+  // Before launch, production pages must not expose (placeholder) page content in their metadata.
+  if (UNDER_CONSTRUCTION) return { robots: { index: false, follow: false } };
   const languages = Object.fromEntries(routing.locales.map((l) => [l, absUrl(l, path)]));
   return {
     title,

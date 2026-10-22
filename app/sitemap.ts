@@ -3,6 +3,7 @@ import { ARTICLES } from "@/content/insights";
 import { PROJECTS } from "@/content/projects";
 import { SERVICES } from "@/content/services";
 import { routing } from "@/i18n/routing";
+import { UNDER_CONSTRUCTION } from "@/lib/launch";
 import { absUrl } from "@/lib/seo";
 
 export const dynamic = "force-static";
@@ -10,6 +11,7 @@ export const dynamic = "force-static";
 const STATIC = ["", "/about", "/about/mission-vision", "/services", "/projects", "/process", "/why-steel", "/quality", "/insights", "/careers", "/contact", "/legal/privacy", "/legal/cookies"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  if (UNDER_CONSTRUCTION) return [];
   const paths = [
     ...STATIC,
     ...SERVICES.map((s) => `/services/${s.slug}`),

@@ -13,6 +13,7 @@ import { PROJECTS } from "@/content/projects";
 import { SERVICES } from "@/content/services";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
+import { UNDER_CONSTRUCTION } from "@/lib/launch";
 import { buildMetadata } from "@/lib/seo";
 import { SITE } from "@/lib/site";
 
@@ -20,10 +21,8 @@ type Props = { params: Promise<{ locale: Locale }> };
 
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
-  return {
-    ...buildMetadata({ locale, title: HOME.meta.title[locale], description: HOME.meta.description[locale] }),
-    title: { absolute: HOME.meta.title[locale] },
-  };
+  const meta = buildMetadata({ locale, title: HOME.meta.title[locale], description: HOME.meta.description[locale] });
+  return UNDER_CONSTRUCTION ? meta : { ...meta, title: { absolute: HOME.meta.title[locale] } };
 }
 
 export default async function HomePage({ params }: Props) {

@@ -16,6 +16,19 @@ so the contact/careers forms deliver to your inbox. Without it, the forms open t
 
 Deploy: import the repo in Vercel (framework preset: Next.js). `vercel.json` redirects `/` → `/tr/`.
 
+## Branches & launch
+
+| Branch | Vercel deployment | Shows |
+| --- | --- | --- |
+| `main` | Production (main domain) | Under-construction page, not indexed by search engines |
+| `preview` | Preview URL | Full website, used for testing and changes |
+
+Work on `preview`, and merge into `main` whenever you like: production keeps showing the
+under-construction page until launch. **Launch day:** set `SITE_LAUNCHED = true` in
+`lib/launch.ts` and merge into `main`.
+
+Test the under-construction page locally: `UNDER_CONSTRUCTION=true npm run build`, then serve `out/`.
+
 ## Where things live
 
 | What | File |

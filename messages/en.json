@@ -83,5 +83,13 @@
     "title": "This beam is missing.",
     "text": "The page you're looking for may have moved, or was never built.",
     "home": "Back to home"
+  },
+  "construction": {
+    "eyebrow": "Coming soon",
+    "title": "Our website is under construction, too.",
+    "text": "Our new website, covering our end-to-end design, engineering and steel construction services, launches soon. In the meantime, you can always reach us about your project.",
+    "whatsapp": "Message us on WhatsApp",
+    "call": "Call us",
+    "services": "Architectural Design · Structural Engineering · Steel Construction · Turnkey"
   }
 }
