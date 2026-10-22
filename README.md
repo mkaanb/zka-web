@@ -14,11 +14,12 @@ npm run typecheck && npm run lint
 Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_WEB3FORMS_KEY` (free key from web3forms.com)
 so the contact/careers forms deliver to your inbox. Without it, the forms open the visitor's mail client.
 
-Deploy: import the repo in Vercel (framework preset: Next.js). `vercel.json` redirects `/` → `/tr/`.
+Deploy: Cloudflare Pages connected to GitHub (build `npm run build`, output `out`, env `NODE_VERSION=22`).
+`public/_redirects` sends `/` to `/tr/` (Cloudflare); `vercel.json` does the same on Vercel.
 
 ## Branches & launch
 
-| Branch | Vercel deployment | Shows |
+| Branch | Deployment | Shows |
 | --- | --- | --- |
 | `main` | Production (main domain) | Under-construction page, not indexed by search engines |
 | `preview` | Preview URL | Full website, used for testing and changes |
