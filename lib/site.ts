@@ -7,8 +7,8 @@ export const SITE = {
   shortName: "ZKA Investment",
   url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.zkainvestment.com").replace(/\/$/, ""),
   foundingYear: 2010,
-  phone: "+90 548 000 00 00",
-  whatsapp: "905480000000",
+  phone: "+90 539 104 02 42",
+  whatsapp: "905391040242",
   email: "info@zkainvestment.com",
   address: {
     street: "Placeholder Cad. No: 1",
